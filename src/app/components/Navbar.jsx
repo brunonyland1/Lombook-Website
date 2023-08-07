@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X, HomeIcon, Newspaper, MailCheck } from "lucide-react";
+import { Menu, X, HomeIcon, Newspaper, MailCheck, Mailbox } from "lucide-react";
 
 export default function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -33,13 +33,19 @@ export default function Navbar() {
     {
       key: "Artigos",
       title: "Artigos",
-      link: "#artigos",
+      link: "/artigos",
       icon: <Newspaper size={32} />,
     },
     {
-      key: "Inscreva-se",
-      title: "Inscreva-se",
-      link: "#inscrevase",
+      key: "Newsletter",
+      title: "Newsletter",
+      link: "/#newsletter",
+      icon: <Mailbox size={32} />,
+    },
+    {
+      key: "Login",
+      title: "Login",
+      link: "#login",
       icon: <MailCheck size={32} />,
     },
   ];

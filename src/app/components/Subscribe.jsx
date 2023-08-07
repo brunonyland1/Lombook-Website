@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Subscribe() {
   return (
-    <section id="inscrevase" className="bg-zinc-800 text-white py-20">
+    <section id="newsletter" className="bg-zinc-800 text-white py-20">
       <div className="max-w-7xl mx-auto px-5">
         <div>
           <h2 className="text-center text-5xl sm:text-6xl lg:text-7xl">

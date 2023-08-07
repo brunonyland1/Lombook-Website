@@ -17,7 +17,7 @@ export default function Articles() {
           <div className=" mt-14 grid gap-y-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center">
             {articles.map((item) => (
               <ArticlesCard
-                key={item.id}
+                id={item.id}
                 imageSrc={item.image}
                 title={item.title}
                 description={item.description}

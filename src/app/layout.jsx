@@ -1,4 +1,6 @@
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import Subscribe from "./components/Subscribe";
 import "./globals.css";
 import { Raleway } from "next/font/google";
 
@@ -15,6 +17,7 @@ export default function RootLayout({ children }) {
       <body className={raleway.className}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

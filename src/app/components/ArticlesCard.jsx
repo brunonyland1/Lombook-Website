@@ -4,7 +4,11 @@ import Link from "next/link";
 
 export default function ArticlesCard({ id, imageSrc, title, description }) {
   return (
-    <div className="w-[350px] h-[400px] rounded bg-zinc-900 " key={id}>
+    <Link
+      href={`artigos/${id}`}
+      className="cursor-pointer w-[350px] h-[400px] rounded bg-zinc-900 "
+      key={id}
+    >
       <div className="w-full h-56 relative">
         <Image
           className="rounded"
@@ -22,6 +26,6 @@ export default function ArticlesCard({ id, imageSrc, title, description }) {
           <p>{description}</p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
