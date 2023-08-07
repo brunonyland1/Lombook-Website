@@ -17,7 +17,7 @@ export default function Navbar() {
     };
 
     window.addEventListener("scroll", changeColor);
-  }, []);
+  }, [color]);
 
   const handleMenu = () => {
     setMenuOpen(!isMenuOpen);
