@@ -15,9 +15,8 @@ export default function Navbar() {
         setColor("bg-zinc-950");
       }
     };
-
     window.addEventListener("scroll", changeColor);
-  }, [color]);
+  }, [setColor]);
 
   const handleMenu = () => {
     setMenuOpen(!isMenuOpen);
